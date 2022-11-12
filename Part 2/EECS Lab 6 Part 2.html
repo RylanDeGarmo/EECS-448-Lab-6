@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title> EECS 448 Lab 6 Part 2 </title>
+        <style>
+            p
+            {
+                font-size: 50;
+
+                color: gold;
+            }
+
+            body
+            {
+                background-color: aqua;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <form method="post">
+
+        <p> Please answer evey question before you submit! </p>
+
+        <label> 1) How many countries start with the letter F? </label> <br>
+        <input type="radio" id="F-3" name="F-Country" value="Three" checked> Three </input> <br>
+        <input type="radio" id="F-5" name="F-Country" value="Five"> Five </input> <br>
+        <input type="radio" id="F-7" name="F-Country" value="Seven"> Seven </input> <br>
+        <input type="radio" id="F-10" name="F-Country" value="Ten"> Ten </input> <br> <br>
+
+        <label> 2) What killed the radio star? </label> <br>
+        <input type="radio" id="Radio-phone" name="Radio-Star" value="Phones" checked> Phones </input> <br>
+        <input type="radio" id="Radio-video" name="Radio-Star" value="Video"> Video </input> <br>
+        <input type="radio" id="Radio-newspaper" name="Radio-Star" value="Newspaper"> Newspaper </input> <br>
+        <input type="radio" id="Radio-Buggles" name="Radio-Star" value="The Buggles"> The Buggles </input> <br> <br>
+
+        <label> 3) Is a tomato a fruit or a vegetable? </label> <br>
+        <input type="radio" id="Tomato-Fruit" name="Tomato" value="Fruit" checked> Fruit </input> <br>
+        <input type="radio" id="Tomato-Vegetable" name="Tomato" value="Vegetable"> Vegetable </input> <br>
+        <input type="radio" id="Tomato-Neither" name="Tomato" value="Neither"> Neither </input> <br>
+        <input type="radio" id="Tomato-Both" name="Tomato" value="Both"> Both </input> <br> <br>
+
+        <label> 4) What is a popular enemy in fantasy typically depicted with green skin? </label> <br>
+        <input type="radio" id="Enemy-Goblin" name="Fantasy-Enemy" value="Goblin" checked> Goblin </input> <br>
+        <input type="radio" id="Enemy-Wolf" name="Fantasy-Enemy" value="Wolf"> Wolf </input> <br>
+        <input type="radio" id="Enemy-Dragon" name="Fantasy-Enemy" value="Dragon"> Dragon </input> <br>
+        <input type="radio" id="Enemy-Bandit" name="Fantasy-Enemy" value="Bandit"> Bandit </input> <br> <br>
+
+        <label> 5) Which of the following is not a game available for mobile devices? </label> <br>
+        <input type="radio" id="Game-Genshin" name="Mobile-Game" value="Genshin Impact" checked> Genshin Impact <br>
+        <input type="radio" id="Game-Clash" name="Mobile-Game" value="Clash of Clans"> Clash of Clans <br>
+        <input type="radio" id="Game-Fossil" name="Mobile-Game" value="Fossil Fighters"> Fossil Fighters <br>
+        <input type="radio" id="Game-Fire" name="Mobile-Game" value="Fire Emblem Heroes"> Fire Emblem Heroes <br><br>
+
+
+                <button name="Submit"> Submit quiz </button> <br>
+                <button name="Clear"> Clear Results </button> <br><br>
+
+        </form>
+
+
+        <?php
+                if(array_key_exists('Submit', $_POST))
+                {
+                include "EECS 448 Lab 6 Part 2.php";
+                }
+        ?>
+    </body>
+</html>
