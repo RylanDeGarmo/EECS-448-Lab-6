@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title> EECS 448 Lab 6 Part 3 </title>
+
+        <link href="style.css"
+        rel="stylesheet">
+    </head>
+
+    <body>
+        <form method="post">
+
+            <p> Welcome to Shop Corp! Please make your purchases below! </p>
+
+            <label class="purchase"> Choose what you wish to purchase: </label> <br><br>
+
+            <label class="purchase"> Bucket: $5.00 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label> 
+            <input type="number" id="bucket" name="bucket"> </input> <br>
+
+            <label class="purchase"> Umbrella: $10.00 &nbsp; &nbsp; </label> 
+            <input type="number" id="umbrella" name="umbrella"> </input> <br>
+
+            <label class="purchase"> Boots: $20.00 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label> 
+            <input type="number" id="boots" name="boots"> </input> <br><br>
+
+            <label class="shipping"> Please choose your method of shipping! </label> <br><br>
+
+            <input type="radio" id="free" name="shipping" value="0.00" checked>
+            <label for="free" class="shipping"> Free 7 day </label> </input> <br>
+            <input type="radio" id="ThreeDay" name="shipping" value="5.00">
+            <label for="ThreeDay" class="shipping"> $5.00 three day </label> </input> <br>
+            <input type="radio" id="OverNight" name="shipping" value="50.00">
+            <label for="OverNight" class="shipping"> $50.00 over night </label> </input> <br><br>
+
+            <label> Please put your email and Password below! </label> <br>
+            <label> Email: </label>
+            <input type="email" id="user" name="user"> </input> <br>
+            <label> Password: </label>
+            <input type="password" id="pass" name="pass"> </input> <br> <br>
+
+
+            <button name="Reset"> Reset </button> <br>
+            <button onclick="formChecker()" name="Submit"> Submit </button>
+
+        <script type="text/javascript" src="formChecker.js"> 
+            
+        </script>
+
+        <?php
+            if(array_key_exists('Submit', $_POST))
+            {
+                include "customerBackend.php";
+            }
+        ?>
+
+    </body>
+</html>

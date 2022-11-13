@@ -1,0 +1,63 @@
+body
+{
+    background-color: slategrey
+}
+
+p
+{
+    font-size: 40;
+    color: rgb(209, 15, 64);
+    
+}
+
+label.purchase
+{
+    color:aquamarine;
+}
+
+label.shipping
+{
+    color:rgb(50, 211, 50);
+}
+
+button
+{
+    background-color: rgb(175, 12, 12);
+    color: rgb(37, 148, 221);
+}
+
+button:hover
+{
+    background-color: rgb(37, 148, 221);
+    color: rgb(175, 12, 12);
+}
+
+table
+{
+    border-width: 3;
+    border-color:red;
+    border-style: dotted;
+
+    background-color: lawngreen;
+    color: darkmagenta;
+}
+
+th
+{
+    border-width: 3;
+    border-color:red;
+    border-style: dotted;
+
+    background-color: lawngreen;
+    color: darkmagenta;
+}
+
+td
+{
+    border-width: 3;
+    border-color:red;
+    border-style: dotted;
+
+    background-color: lawngreen;
+    color: darkmagenta;
+}
